@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import PoemListPage from './PoemListPage'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className='App'>
+        <nav>
+          <a href='/'>Poem List</a>
+        </nav>
+        <header>
+          <h1>William Setstatespear</h1>
         </header>
+        <main>
+          <PoemListPage />
+        </main>
+        <footer>
+          <p>© WilliamSetstatespear, 2018. All Rights Reserved.</p>
+        </footer>
       </div>
     );
   }
