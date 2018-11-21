@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import PoemListPage from './PoemListPage'
 import PoemPage from './PoemPage'
 import './App.css';
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className='App'>
         <nav>
-          <a href='/'>Poem List</a>
+          <Link to='/'>Poem List</Link>
         </nav>
         <header>
           <h1>William Setstatespear</h1>
