@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import PoemListPage from './PoemListPage'
+import PoemPage from './PoemPage'
 import './App.css';
 
 class App extends Component {
@@ -17,6 +18,10 @@ class App extends Component {
           <Route
             exact path='/'
             component={PoemListPage}
+          />
+          <Route
+            path='/poem/:poemId'
+            component={PoemPage}
           />
         </main>
         <footer>
